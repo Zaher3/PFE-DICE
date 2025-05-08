@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mixed Reality Example for Meta-OpenXR Quick Start Guide
 
 Unity’s **Mixed Reality (MR) Example for Meta-OpenXR** provides a starting point for mixed reality development in Unity. The example configures project settings, pre-installs the right packages, and includes various pre-configured Example Assets to demonstrate how to set up a project that is ready for MR. Please refer to the [XR Project Setup](https://docs.unity3d.com/2022.3/Documentation/Manual/xr-create-projects.html) documentation for additional information.
@@ -104,3 +105,7 @@ For Quest-based devices, the `Standalone Performant Preset` and `Performant URP 
 In addition, by selecting the target platform in Build Settings, OpenXR feature groups and interaction profiles are preconfigured. By default, the Android build target updates the settings for Meta Quest support.
 
 ![ProjectConfigOpenXRAndroid](Documentation/images/projectconfig-openxr-metaquest.png)
+=======
+# PFE-DICE
+Metaquest_AR
+>>>>>>> 36a3e0f9bd1d66fbc43d87f5f6a026df59751e08
