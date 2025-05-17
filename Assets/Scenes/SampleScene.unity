@@ -3216,6 +3216,7 @@ GameObject:
   - component: {fileID: 6496690291575798416}
   - component: {fileID: 6496690291575798418}
   - component: {fileID: 6496690291575798417}
+  - component: {fileID: 6496690291575798419}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_04
   m_TagString: Untagged
@@ -3333,6 +3334,7 @@ GameObject:
   - component: {fileID: 5517736701035540823}
   - component: {fileID: 6193239228664929128}
   - component: {fileID: 6193239228664929127}
+  - component: {fileID: 6193239228664929129}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_34
   m_TagString: Untagged
@@ -3574,6 +3576,7 @@ GameObject:
   - component: {fileID: 4179781619643846299}
   - component: {fileID: 8793874038470624304}
   - component: {fileID: 8793874038470624303}
+  - component: {fileID: 8793874038470624305}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_03
   m_TagString: Untagged
@@ -3634,6 +3637,7 @@ GameObject:
   - component: {fileID: 2203164778754901540}
   - component: {fileID: 6523836113171426955}
   - component: {fileID: 6523836113171426954}
+  - component: {fileID: 6523836113171426956}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_10
   m_TagString: Untagged
@@ -4081,6 +4085,7 @@ GameObject:
   - component: {fileID: 8790782036979865029}
   - component: {fileID: 8790782036979865031}
   - component: {fileID: 8790782036979865030}
+  - component: {fileID: 8790782036979865032}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_47
   m_TagString: Untagged
@@ -4910,6 +4915,7 @@ GameObject:
   - component: {fileID: 8826262852176346662}
   - component: {fileID: 8826262852176346664}
   - component: {fileID: 8826262852176346663}
+  - component: {fileID: 8826262852176346665}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_15
   m_TagString: Untagged
@@ -5591,6 +5597,7 @@ GameObject:
   - component: {fileID: 7891518697419490188}
   - component: {fileID: 7891518697419490190}
   - component: {fileID: 7891518697419490189}
+  - component: {fileID: 7891518697419490191}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_54
   m_TagString: Untagged
@@ -6741,6 +6748,7 @@ GameObject:
   - component: {fileID: 4237244593329203872}
   - component: {fileID: 4237244593329203874}
   - component: {fileID: 4237244593329203873}
+  - component: {fileID: 4237244593329203875}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_02
   m_TagString: Untagged
@@ -6846,6 +6854,7 @@ GameObject:
   - component: {fileID: 5025562069806443060}
   - component: {fileID: 8108993275689321629}
   - component: {fileID: 8108993275689321628}
+  - component: {fileID: 8108993275689321630}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_28
   m_TagString: Untagged
@@ -7093,6 +7102,7 @@ GameObject:
   - component: {fileID: 925439975547052221}
   - component: {fileID: 5248281154695183606}
   - component: {fileID: 5248281154695183605}
+  - component: {fileID: 5248281154695183607}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_41
   m_TagString: Untagged
@@ -7144,6 +7154,7 @@ GameObject:
   - component: {fileID: 3387126321401632678}
   - component: {fileID: 5207158044498736280}
   - component: {fileID: 5207158044498736279}
+  - component: {fileID: 5207158044498736281}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_01
   m_TagString: Untagged
@@ -7538,6 +7549,7 @@ GameObject:
   - component: {fileID: 4987484099924681049}
   - component: {fileID: 6698921068854286147}
   - component: {fileID: 6698921068854286146}
+  - component: {fileID: 6698921068854286148}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_14
   m_TagString: Untagged
@@ -7573,6 +7585,7 @@ GameObject:
   - component: {fileID: 8738215466942997859}
   - component: {fileID: 8738215466942997861}
   - component: {fileID: 8738215466942997860}
+  - component: {fileID: 8738215466942997862}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_27
   m_TagString: Untagged
@@ -7802,6 +7815,7 @@ GameObject:
   - component: {fileID: 1436239797896216372}
   - component: {fileID: 7107506395422208124}
   - component: {fileID: 7107506395422208123}
+  - component: {fileID: 7107506395422208125}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_53
   m_TagString: Untagged
@@ -8030,6 +8044,7 @@ GameObject:
   - component: {fileID: 6472881021022908682}
   - component: {fileID: 9176488971151608672}
   - component: {fileID: 9176488971151608671}
+  - component: {fileID: 9176488971151608673}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_19
   m_TagString: Untagged
@@ -8561,6 +8576,7 @@ GameObject:
   - component: {fileID: 7970878503098072120}
   - component: {fileID: 7970878503098072122}
   - component: {fileID: 7970878503098072121}
+  - component: {fileID: 7970878503098072123}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_52
   m_TagString: Untagged
@@ -8581,6 +8597,7 @@ GameObject:
   - component: {fileID: 5141943654496114529}
   - component: {fileID: 7796216897286354759}
   - component: {fileID: 7796216897286354758}
+  - component: {fileID: 7796216897286354760}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_44
   m_TagString: Untagged
@@ -8832,6 +8849,7 @@ GameObject:
   - component: {fileID: 5836820845727893313}
   - component: {fileID: 5836820845727893315}
   - component: {fileID: 5836820845727893314}
+  - component: {fileID: 5836820845727893316}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_16
   m_TagString: Untagged
@@ -8917,6 +8935,7 @@ GameObject:
   - component: {fileID: 1916088466590135731}
   - component: {fileID: 6666246492657969596}
   - component: {fileID: 6666246492657969595}
+  - component: {fileID: 6666246492657969597}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_05
   m_TagString: Untagged
@@ -9178,6 +9197,7 @@ GameObject:
   - component: {fileID: 8071208690164258634}
   - component: {fileID: 8071208690164258636}
   - component: {fileID: 8071208690164258635}
+  - component: {fileID: 8071208690164258637}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_22
   m_TagString: Untagged
@@ -9511,6 +9531,7 @@ GameObject:
   - component: {fileID: 1175959493459464211}
   - component: {fileID: 8280220624914402849}
   - component: {fileID: 8280220624914402848}
+  - component: {fileID: 8280220624914402850}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_42
   m_TagString: Untagged
@@ -9922,6 +9943,7 @@ GameObject:
   - component: {fileID: 1066318846200105676}
   - component: {fileID: 8892243884725468161}
   - component: {fileID: 8892243884725468160}
+  - component: {fileID: 8892243884725468162}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_29
   m_TagString: Untagged
@@ -10432,6 +10454,7 @@ GameObject:
   - component: {fileID: 4668734567278606468}
   - component: {fileID: 6710009796329768990}
   - component: {fileID: 6710009796329768989}
+  - component: {fileID: 6710009796329768991}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_37
   m_TagString: Untagged
@@ -10679,6 +10702,7 @@ GameObject:
   - component: {fileID: 7497378913242953526}
   - component: {fileID: 7497378913242953528}
   - component: {fileID: 7497378913242953527}
+  - component: {fileID: 7497378913242953529}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_09
   m_TagString: Untagged
@@ -11396,6 +11420,7 @@ GameObject:
   - component: {fileID: 389407152406908053}
   - component: {fileID: 7373827582666722560}
   - component: {fileID: 7373827582666722559}
+  - component: {fileID: 7373827582666722561}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_18
   m_TagString: Untagged
@@ -11636,6 +11661,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4237244593329203875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511804250549227802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &4252558344867447475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11867,6 +11914,7 @@ GameObject:
   - component: {fileID: 6226312745319928171}
   - component: {fileID: 8316807614824185474}
   - component: {fileID: 8316807614824185473}
+  - component: {fileID: 8316807614824185475}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_35
   m_TagString: Untagged
@@ -12573,6 +12621,7 @@ GameObject:
   - component: {fileID: 5825303486047002633}
   - component: {fileID: 5825303486047002635}
   - component: {fileID: 5825303486047002634}
+  - component: {fileID: 5825303486047002636}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_11
   m_TagString: Untagged
@@ -13147,6 +13196,7 @@ GameObject:
   - component: {fileID: 4348187428295878634}
   - component: {fileID: 4791956679942151506}
   - component: {fileID: 4791956679942151505}
+  - component: {fileID: 4791956679942151507}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_26
   m_TagString: Untagged
@@ -13333,6 +13383,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4791956679942151507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791956679942151504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &4795690962069293790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13493,6 +13565,7 @@ GameObject:
   - component: {fileID: 4640243240416986452}
   - component: {fileID: 8172138637465218463}
   - component: {fileID: 8172138637465218462}
+  - component: {fileID: 8172138637465218464}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_45
   m_TagString: Untagged
@@ -13651,6 +13724,7 @@ GameObject:
   - component: {fileID: 6876497392463149628}
   - component: {fileID: 8029822002574940949}
   - component: {fileID: 8029822002574940948}
+  - component: {fileID: 8029822002574940950}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_40
   m_TagString: Untagged
@@ -13980,6 +14054,7 @@ GameObject:
   - component: {fileID: 2557630784234888582}
   - component: {fileID: 7785676733289120788}
   - component: {fileID: 7785676733289120787}
+  - component: {fileID: 7785676733289120789}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_51
   m_TagString: Untagged
@@ -14371,6 +14446,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5207158044498736281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771707977516818027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!23 &5217560095741407139
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14617,6 +14714,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5248281154695183607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688634227292039049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &5261560052663164890
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14780,6 +14899,7 @@ GameObject:
   - component: {fileID: 2905724995926483978}
   - component: {fileID: 5314035269494887451}
   - component: {fileID: 5314035269494887450}
+  - component: {fileID: 5314035269494887452}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_50
   m_TagString: Untagged
@@ -14966,6 +15086,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5314035269494887452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314035269494887449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &5327205086084062944
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15261,6 +15403,7 @@ GameObject:
   - component: {fileID: 1935256864700126074}
   - component: {fileID: 5447604412356780354}
   - component: {fileID: 5447604412356780353}
+  - component: {fileID: 5447604412356780355}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_23
   m_TagString: Untagged
@@ -15447,6 +15590,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5447604412356780355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5447604412356780352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &5472173173747325133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17293,6 +17458,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5825303486047002636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4546102934248143468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!23 &5836820845727893313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17514,6 +17701,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5836820845727893316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002530255413170619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &5857312953224875742
 Transform:
   m_ObjectHideFlags: 0
@@ -17599,6 +17808,7 @@ GameObject:
   - component: {fileID: 684498188216164748}
   - component: {fileID: 5911303795927584576}
   - component: {fileID: 5911303795927584575}
+  - component: {fileID: 5911303795927584577}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_06
   m_TagString: Untagged
@@ -17785,6 +17995,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5911303795927584577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911303795927584574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &5913595892887792407
 Transform:
   m_ObjectHideFlags: 0
@@ -18270,6 +18502,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6193239228664929129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199975393926701985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &6195669020205270348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18474,6 +18728,7 @@ GameObject:
   - component: {fileID: 2654915912402556191}
   - component: {fileID: 6288048427503432073}
   - component: {fileID: 6288048427503432072}
+  - component: {fileID: 6288048427503432074}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_25
   m_TagString: Untagged
@@ -18660,6 +18915,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6288048427503432074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288048427503432071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &6304367101847765510
 GameObject:
   m_ObjectHideFlags: 0
@@ -18739,6 +19016,7 @@ GameObject:
   - component: {fileID: 2914000674672333387}
   - component: {fileID: 8991514053796780361}
   - component: {fileID: 8991514053796780360}
+  - component: {fileID: 8991514053796780362}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_43
   m_TagString: Untagged
@@ -18759,6 +19037,7 @@ GameObject:
   - component: {fileID: 1465544290227907798}
   - component: {fileID: 6361328075820822474}
   - component: {fileID: 6361328075820822473}
+  - component: {fileID: 6361328075820822475}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_21
   m_TagString: Untagged
@@ -18945,6 +19224,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6361328075820822475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361328075820822472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &6372097140166134776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19221,6 +19522,7 @@ GameObject:
   - component: {fileID: 7562001210407105349}
   - component: {fileID: 9175662730271580607}
   - component: {fileID: 9175662730271580606}
+  - component: {fileID: 9175662730271580608}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_38
   m_TagString: Untagged
@@ -19772,6 +20074,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6496690291575798419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96193984941581671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &6523836113171426953
 Transform:
   m_ObjectHideFlags: 0
@@ -19966,6 +20290,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6523836113171426956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520729314280358883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &6529676621963623567
 Transform:
   m_ObjectHideFlags: 0
@@ -20456,6 +20802,7 @@ GameObject:
   - component: {fileID: 4915261708293113354}
   - component: {fileID: 7818346222451915436}
   - component: {fileID: 7818346222451915435}
+  - component: {fileID: 7818346222451915437}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_30
   m_TagString: Untagged
@@ -20657,6 +21004,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6666246492657969597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3075580112673584136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &6698921068854286145
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20844,6 +21213,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6698921068854286148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010325770616924410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &6710009796329768988
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21031,6 +21422,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6710009796329768991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882804066238100762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &6718466768786987179
 GameObject:
   m_ObjectHideFlags: 0
@@ -21641,6 +22054,7 @@ GameObject:
   - component: {fileID: 669006249586149232}
   - component: {fileID: 7597724194996168075}
   - component: {fileID: 7597724194996168074}
+  - component: {fileID: 7597724194996168076}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_36
   m_TagString: Untagged
@@ -21699,6 +22113,7 @@ GameObject:
   - component: {fileID: 4018017630830706118}
   - component: {fileID: 6984216358640601797}
   - component: {fileID: 6984216358640601796}
+  - component: {fileID: 6984216358640601798}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_39
   m_TagString: Untagged
@@ -21885,6 +22300,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6984216358640601798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984216358640601795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1001 &7028025955239392457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22508,6 +22945,7 @@ GameObject:
   - component: {fileID: 8089855264739316855}
   - component: {fileID: 8089855264739316857}
   - component: {fileID: 8089855264739316856}
+  - component: {fileID: 8089855264739316858}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_49
   m_TagString: Untagged
@@ -22827,6 +23265,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7107506395422208125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2295001162673635061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &7114094730851071082
 Transform:
   m_ObjectHideFlags: 0
@@ -23097,6 +23557,7 @@ GameObject:
   - component: {fileID: 4629621415031176996}
   - component: {fileID: 8230599189032959435}
   - component: {fileID: 8230599189032959434}
+  - component: {fileID: 8230599189032959436}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_33
   m_TagString: Untagged
@@ -23379,6 +23840,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7373827582666722561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226540334002348731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &7375087617457764745
 GameObject:
   m_ObjectHideFlags: 0
@@ -23392,6 +23875,7 @@ GameObject:
   - component: {fileID: 7072726348235772572}
   - component: {fileID: 7897042445088345113}
   - component: {fileID: 7897042445088345112}
+  - component: {fileID: 7897042445088345114}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_08
   m_TagString: Untagged
@@ -23498,6 +23982,7 @@ GameObject:
   - component: {fileID: 4497689838993024604}
   - component: {fileID: 8227662692480670858}
   - component: {fileID: 8227662692480670857}
+  - component: {fileID: 8227662692480670859}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_24
   m_TagString: Untagged
@@ -23852,6 +24337,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7497378913242953529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3996564597103083593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &7506178737297963051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23879,6 +24386,7 @@ GameObject:
   - component: {fileID: 7084502438412540560}
   - component: {fileID: 7523628211050644088}
   - component: {fileID: 7523628211050644087}
+  - component: {fileID: 7523628211050644089}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_46
   m_TagString: Untagged
@@ -24065,6 +24573,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7523628211050644089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523628211050644086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &7541140737823914105
 Transform:
   m_ObjectHideFlags: 0
@@ -24368,6 +24898,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7597724194996168076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952419962277693646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!23 &7608579955079121850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24473,6 +25025,7 @@ GameObject:
   - component: {fileID: 8595273065870000675}
   - component: {fileID: 8685140209531768295}
   - component: {fileID: 8685140209531768294}
+  - component: {fileID: 8685140209531768296}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_17
   m_TagString: Untagged
@@ -24923,6 +25476,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7785676733289120789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5124092982980932001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &7796216897286354757
 Transform:
   m_ObjectHideFlags: 0
@@ -25117,6 +25692,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7796216897286354760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833197347616732607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &7818346222451915434
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25304,6 +25901,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7818346222451915437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650147442352803608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!224 &7821075290672194935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25465,6 +26084,7 @@ GameObject:
   - component: {fileID: 7292556215461690591}
   - component: {fileID: 7832654503321946827}
   - component: {fileID: 7832654503321946826}
+  - component: {fileID: 7832654503321946828}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_20
   m_TagString: Untagged
@@ -25651,6 +26271,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7832654503321946828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832654503321946825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &7838028093197176833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26186,6 +26828,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7891518697419490191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249125080880083684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &7897042445088345111
 Transform:
   m_ObjectHideFlags: 0
@@ -26380,6 +27044,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7897042445088345114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375087617457764745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &7897186826975846890
 Transform:
   m_ObjectHideFlags: 0
@@ -26666,6 +27352,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7970878503098072123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822536872309056664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &7973328001919529292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28147,6 +28855,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8029822002574940950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009142888944350585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &8041761339287749659
 Transform:
   m_ObjectHideFlags: 0
@@ -28201,6 +28931,7 @@ GameObject:
   - component: {fileID: 8742457906223537564}
   - component: {fileID: 8742457906223537566}
   - component: {fileID: 8742457906223537565}
+  - component: {fileID: 8742457906223537567}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_31
   m_TagString: Untagged
@@ -28444,6 +29175,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8071208690164258637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182417820238937988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8083751582156402912
 GameObject:
   m_ObjectHideFlags: 0
@@ -28685,6 +29438,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8089855264739316858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7079717031117109791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &8104392627713738664
 Transform:
   m_ObjectHideFlags: 0
@@ -28904,6 +29679,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8108993275689321630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581781887725095863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &8113672378318928057
 Transform:
   m_ObjectHideFlags: 0
@@ -28932,6 +29729,7 @@ GameObject:
   - component: {fileID: 3901515373539220280}
   - component: {fileID: 8130231420118972738}
   - component: {fileID: 8130231420118972737}
+  - component: {fileID: 8130231420118972739}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_32
   m_TagString: Untagged
@@ -29118,6 +29916,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8130231420118972739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8130231420118972736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8150120487424082964
 GameObject:
   m_ObjectHideFlags: 0
@@ -29389,6 +30209,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8172138637465218464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889343815964244274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &8197041164797154416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29742,6 +30584,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8227662692480670859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419183831188382001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &8230599189032959433
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29929,6 +30793,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8230599189032959436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254512531521748787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8242550597022853457
 GameObject:
   m_ObjectHideFlags: 0
@@ -30259,6 +31145,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8280220624914402850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3289569310526043840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8293756292481712871
 GameObject:
   m_ObjectHideFlags: 0
@@ -30272,6 +31180,7 @@ GameObject:
   - component: {fileID: 651770125750799188}
   - component: {fileID: 8293756292481712873}
   - component: {fileID: 8293756292481712872}
+  - component: {fileID: 8293756292481712874}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_07
   m_TagString: Untagged
@@ -30458,6 +31367,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8293756292481712874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8293756292481712871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8307949809160978540
 GameObject:
   m_ObjectHideFlags: 0
@@ -30471,6 +31402,7 @@ GameObject:
   - component: {fileID: 1233820921761960932}
   - component: {fileID: 8307949809160978542}
   - component: {fileID: 8307949809160978541}
+  - component: {fileID: 8307949809160978543}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_48
   m_TagString: Untagged
@@ -30657,6 +31589,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8307949809160978543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8307949809160978540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &8313051740391913338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30985,6 +31939,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8316807614824185475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393203989548792574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &8320285730119278118
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31006,6 +31982,7 @@ GameObject:
   - component: {fileID: 9107044880113870524}
   - component: {fileID: 9107044880113870526}
   - component: {fileID: 9107044880113870525}
+  - component: {fileID: 9107044880113870527}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_12
   m_TagString: Untagged
@@ -31774,6 +32751,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8685140209531768296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7635692088944190104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8687780824109397950
 GameObject:
   m_ObjectHideFlags: 0
@@ -32112,6 +33111,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8738215466942997862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069308582765530626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!23 &8742457906223537564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32333,6 +33354,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8742457906223537567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061959583924356096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &8744082137198868824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32616,6 +33659,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8790782036979865032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734493580079022366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &8793874038470624302
 Transform:
   m_ObjectHideFlags: 0
@@ -32810,6 +33875,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8793874038470624305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499436345528671090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &8796210237089864900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33064,6 +34151,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8826262852176346665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002064223026129588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &8827675226530387360
 GameObject:
   m_ObjectHideFlags: 0
@@ -33247,6 +34356,7 @@ GameObject:
   - component: {fileID: 733732683211439457}
   - component: {fileID: 8886108695285511692}
   - component: {fileID: 8886108695285511691}
+  - component: {fileID: 8886108695285511693}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14_13
   m_TagString: Untagged
@@ -33433,6 +34543,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8886108695285511693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886108695285511690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &8891391614553909850
 Transform:
   m_ObjectHideFlags: 0
@@ -33647,6 +34779,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8892243884725468162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663987442436243606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!114 &8924852902407352001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34047,6 +35201,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8991514053796780362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360440048935723328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!1 &9009312294004168171
 GameObject:
   m_ObjectHideFlags: 0
@@ -34300,6 +35476,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9107044880113870527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321307667696081958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!136 &9118169775750300227
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34619,6 +35817,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9175662730271580608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396331063199631286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!33 &9176488971151608670
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34806,6 +36026,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9176488971151608673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533282473593014824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2e3cf35d3de824da57d398eae85a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapDistance: 0.3
+  snapSpeed: 10
+  snapZoneIndicator: {fileID: 0}
+  showSnapZone: 0
+  audioSource: {fileID: 0}
+  enterSnapZoneSound: {fileID: 0}
+  snapBackSound: {fileID: 0}
+  soundVolume: 0.5
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
 --- !u!4 &9184439809953401937
 Transform:
   m_ObjectHideFlags: 0
