@@ -274,6 +274,20 @@ namespace Unity.XRTemplate
             }
         }
 
+        public void ShowConnectionStatus(bool connected, string message)
+        {
+            // Use existing result panel and text for connection status
+            if (resultPanel != null && resultText != null)
+            {
+                resultPanel.SetActive(true);
+                resultText.text = message;
+                resultText.color = connected ? Color.green : Color.red;
+
+                // Optionally auto-hide after a delay
+                StartCoroutine(AutoHideResult());
+            }
+        }
+
         public void ShowScanningIndicator(bool visible)
         {
             if (scanningIndicator != null)

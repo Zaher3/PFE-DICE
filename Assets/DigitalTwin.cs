@@ -16,6 +16,10 @@ namespace Unity.XRTemplate
         private string machineId;
 
         [SerializeField]
+        [Tooltip("How long to play the reveal animation")]
+        private float revealAnimationDuration = 1.0f;
+
+        [SerializeField]
         [Tooltip("Status indicator material for normal operation")]
         private Material normalStatusMaterial;
 
@@ -63,7 +67,7 @@ namespace Unity.XRTemplate
         {
             Normal,
             Warning,
-            Error
+            Error,
         }
 
         private MachineStatus currentStatus = MachineStatus.Normal;
@@ -76,7 +80,7 @@ namespace Unity.XRTemplate
             if (grabInteractable == null)
             {
                 grabInteractable = gameObject.AddComponent<XRGrabInteractable>();
-                
+
                 // Configure the interactable for inspection rather than traditional grabbing
                 grabInteractable.movementType = XRBaseInteractable.MovementType.VelocityTracking;
                 grabInteractable.throwOnDetach = false;
@@ -136,33 +140,75 @@ namespace Unity.XRTemplate
             isInitialized = true;
         }
 
+        public void PlayRevealAnimation()
+        {
+            StartCoroutine(RevealAnimationCoroutine());
+        }
+
+        private IEnumerator RevealAnimationCoroutine()
+        {
+            // Start with a small scale
+            transform.localScale = Vector3.zero;
+
+            // Scale up with bounce effect
+            float timeElapsed = 0;
+            while (timeElapsed < revealAnimationDuration)
+            {
+                float normalizedTime = timeElapsed / revealAnimationDuration;
+
+                // Elastic ease-out formula for bouncy effect
+                const float c = 1.70158f;
+                const float c4 = (c + 1) * 1.525f;
+                float progress = normalizedTime;
+
+                if (normalizedTime < 1)
+                {
+                    progress =
+                        1
+                        - Mathf.Pow(2, -10 * normalizedTime)
+                            * Mathf.Sin((normalizedTime * 10 - 0.75f) * (2 * Mathf.PI) / 3);
+                }
+
+                transform.localScale = Vector3.one * progress;
+
+                timeElapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            // Ensure we end at exactly the target scale
+            transform.localScale = Vector3.one;
+        }
+
         private IEnumerator PlaySpawnAnimation()
         {
             // Start small
             transform.localScale = Vector3.zero;
-            
+
             // Scale up with bounce effect
             float timeElapsed = 0;
             while (timeElapsed < spawnAnimationDuration)
             {
                 float normalizedTime = timeElapsed / spawnAnimationDuration;
-                
+
                 // Elastic ease-out formula for bouncy effect
                 const float c = 1.70158f;
                 const float c4 = (c + 1) * 1.525f;
                 float progress = normalizedTime;
-                
+
                 if (normalizedTime < 1)
                 {
-                    progress = 1 - Mathf.Pow(2, -10 * normalizedTime) * Mathf.Sin((normalizedTime * 10 - 0.75f) * (2 * Mathf.PI) / 3);
+                    progress =
+                        1
+                        - Mathf.Pow(2, -10 * normalizedTime)
+                            * Mathf.Sin((normalizedTime * 10 - 0.75f) * (2 * Mathf.PI) / 3);
                 }
-                
+
                 transform.localScale = Vector3.one * progress;
-                
+
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
-            
+
             // Ensure we end at exactly the target scale
             transform.localScale = Vector3.one;
         }
@@ -173,7 +219,7 @@ namespace Unity.XRTemplate
             {
                 selectionHighlight.SetActive(true);
             }
-            
+
             ShowInfoPanel();
         }
 
@@ -183,7 +229,7 @@ namespace Unity.XRTemplate
             {
                 selectionHighlight.SetActive(false);
             }
-            
+
             HideInfoPanel();
         }
 
@@ -193,9 +239,9 @@ namespace Unity.XRTemplate
             {
                 // Position the panel near the digital twin
                 Vector3 panelPosition = transform.position + Vector3.up * 0.5f;
-                
+
                 spawnedInfoPanel = Instantiate(infoPanel, panelPosition, Quaternion.identity);
-                
+
                 // Update panel content with machine data
                 UpdateInfoPanel();
             }
@@ -214,10 +260,10 @@ namespace Unity.XRTemplate
         {
             if (spawnedInfoPanel == null)
                 return;
-            
+
             // Update the info panel with machine data
             // This implementation will depend on your specific UI setup
-            
+
             // Example with a TextMeshProUGUI component:
             /*
             TMPro.TextMeshProUGUI infoText = spawnedInfoPanel.GetComponentInChildren<TMPro.TextMeshProUGUI>();
@@ -240,10 +286,10 @@ namespace Unity.XRTemplate
         {
             // Parse the telemetry data from JSON
             // This would typically update the telemetryData dictionary
-            
+
             // Example JSON parsing (simplified):
             /*
-            try 
+            try
             {
                 var data = JsonUtility.FromJson<TelemetryData>(message);
                 telemetryData.Clear();
@@ -262,36 +308,36 @@ namespace Unity.XRTemplate
                 Debug.LogError($"Error parsing telemetry data: {e.Message}");
             }
             */
-            
+
             // For now, just update the info panel
             UpdateInfoPanel();
         }
-        
+
         private void UpdateMachineStatus(MachineStatus newStatus)
         {
             if (newStatus == currentStatus)
                 return;
-                
+
             currentStatus = newStatus;
-            
+
             // Update visual indicators
             Material statusMaterial = null;
-            
+
             switch (currentStatus)
             {
                 case MachineStatus.Normal:
                     statusMaterial = normalStatusMaterial;
                     break;
-                    
+
                 case MachineStatus.Warning:
                     statusMaterial = warningStatusMaterial;
                     break;
-                    
+
                 case MachineStatus.Error:
                     statusMaterial = errorStatusMaterial;
                     break;
             }
-            
+
             if (statusMaterial != null)
             {
                 foreach (var renderer in statusIndicatorRenderers)
@@ -302,11 +348,11 @@ namespace Unity.XRTemplate
                     }
                 }
             }
-            
+
             // Update the info panel if it's visible
             UpdateInfoPanel();
         }
-        
+
         /// <summary>
         /// Send a command to the physical machine via MQTT
         /// </summary>
@@ -316,49 +362,50 @@ namespace Unity.XRTemplate
         {
             if (mqttManager == null || string.IsNullOrEmpty(commandTopic))
                 return;
-                
+
             // Construct command message
-            string commandMessage = $"{{\"command\":\"{commandName}\",\"machineId\":\"{machineId}\"";
-            
+            string commandMessage =
+                $"{{\"command\":\"{commandName}\",\"machineId\":\"{machineId}\"";
+
             if (parameters != null && parameters.Count > 0)
             {
                 commandMessage += ",\"parameters\":{";
                 bool first = true;
-                
+
                 foreach (var param in parameters)
                 {
                     if (!first)
                         commandMessage += ",";
-                        
+
                     // This is simplified and won't work for complex objects
                     commandMessage += $"\"{param.Key}\":{JsonValue(param.Value)}";
                     first = false;
                 }
-                
+
                 commandMessage += "}";
             }
-            
+
             commandMessage += "}";
-            
+
             // Send the command
             mqttManager.Publish(commandTopic, commandMessage);
         }
-        
+
         // Helper method to convert a value to JSON representation
         private string JsonValue(object value)
         {
             if (value == null)
                 return "null";
-                
+
             if (value is bool)
                 return value.ToString().ToLowerInvariant();
-                
+
             if (value is string)
                 return $"\"{value}\"";
-                
+
             if (value is int || value is float || value is double)
                 return value.ToString();
-                
+
             // For complex objects, use JsonUtility
             return JsonUtility.ToJson(value);
         }

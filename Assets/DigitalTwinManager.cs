@@ -13,6 +13,7 @@ namespace Unity.XRTemplate
         {
             public string machineId;
             public GameObject digitalTwinPrefab;
+
             [TextArea(3, 5)]
             public string description;
         }
@@ -57,7 +58,11 @@ namespace Unity.XRTemplate
         /// <param name="position">Optional position to spawn at. If null, will spawn in front of camera</param>
         /// <param name="rotation">Optional rotation to use. If null, will orient toward camera</param>
         /// <returns>The spawned digital twin GameObject, or null if spawn failed</returns>
-        public GameObject SpawnDigitalTwin(string machineId, Vector3? position = null, Quaternion? rotation = null)
+        public GameObject SpawnDigitalTwin(
+            string machineId,
+            Vector3? position = null,
+            Quaternion? rotation = null
+        )
         {
             // Find the right prefab
             GameObject prefabToSpawn;
@@ -66,11 +71,15 @@ namespace Unity.XRTemplate
                 if (defaultDigitalTwin != null)
                 {
                     prefabToSpawn = defaultDigitalTwin;
-                    Debug.LogWarning($"Machine ID '{machineId}' not found in mappings. Using default digital twin.");
+                    Debug.LogWarning(
+                        $"Machine ID '{machineId}' not found in mappings. Using default digital twin."
+                    );
                 }
                 else
                 {
-                    Debug.LogError($"Machine ID '{machineId}' not found and no default digital twin specified.");
+                    Debug.LogError(
+                        $"Machine ID '{machineId}' not found and no default digital twin specified."
+                    );
                     return null;
                 }
             }
@@ -83,7 +92,8 @@ namespace Unity.XRTemplate
             }
             else if (mainCamera != null)
             {
-                spawnPosition = mainCamera.transform.position + mainCamera.transform.forward * spawnDistance;
+                spawnPosition =
+                    mainCamera.transform.position + mainCamera.transform.forward * spawnDistance;
             }
             else
             {
@@ -105,7 +115,7 @@ namespace Unity.XRTemplate
                 // Make the digital twin face the camera
                 Vector3 lookDirection = mainCamera.transform.position - spawnPosition;
                 lookDirection.y = 0; // Keep the twin upright (if needed)
-                
+
                 if (lookDirection != Vector3.zero)
                 {
                     spawnRotation = Quaternion.LookRotation(lookDirection);
@@ -146,6 +156,153 @@ namespace Unity.XRTemplate
                 return prefab;
             }
             return defaultDigitalTwin;
+        }
+
+        /// <summary>
+        /// Spawns a digital twin for the specified machine ID that starts invisible.
+        /// </summary>
+        /// <param name="machineId">The ID of the recognized machine</param>
+        /// <param name="position">Optional position to spawn at. If null, will spawn in front of camera</param>
+        /// <param name="rotation">Optional rotation to use. If null, will orient toward camera</param>
+        /// <param name="startVisible">Whether the twin should start visible or invisible</param>
+        /// <returns>The spawned digital twin GameObject, or null if spawn failed</returns>
+        public GameObject SpawnDigitalTwin(
+            string machineId,
+            Vector3? position = null,
+            Quaternion? rotation = null,
+            bool startVisible = false
+        )
+        {
+            // Find the right prefab
+            GameObject prefabToSpawn;
+            if (!machineMap.TryGetValue(machineId, out prefabToSpawn))
+            {
+                if (defaultDigitalTwin != null)
+                {
+                    prefabToSpawn = defaultDigitalTwin;
+                    Debug.LogWarning(
+                        $"Machine ID '{machineId}' not found in mappings. Using default digital twin."
+                    );
+                }
+                else
+                {
+                    Debug.LogError(
+                        $"Machine ID '{machineId}' not found and no default digital twin specified."
+                    );
+                    return null;
+                }
+            }
+
+            // Determine spawn position
+            Vector3 spawnPosition;
+            if (position.HasValue)
+            {
+                spawnPosition = position.Value;
+            }
+            else if (mainCamera != null)
+            {
+                spawnPosition =
+                    mainCamera.transform.position + mainCamera.transform.forward * spawnDistance;
+            }
+            else
+            {
+                Debug.LogError("No spawn position provided and no main camera found.");
+                return null;
+            }
+
+            // Apply offset
+            spawnPosition += spawnOffset;
+
+            // Determine rotation
+            Quaternion spawnRotation;
+            if (rotation.HasValue)
+            {
+                spawnRotation = rotation.Value;
+            }
+            else if (mainCamera != null)
+            {
+                // Make the digital twin face the camera
+                Vector3 lookDirection = mainCamera.transform.position - spawnPosition;
+                lookDirection.y = 0; // Keep the twin upright
+
+                if (lookDirection != Vector3.zero)
+                {
+                    spawnRotation = Quaternion.LookRotation(lookDirection);
+                }
+                else
+                {
+                    spawnRotation = Quaternion.identity;
+                }
+            }
+            else
+            {
+                spawnRotation = Quaternion.identity;
+            }
+
+            // Instantiate the digital twin
+            GameObject twinInstance = Instantiate(prefabToSpawn, spawnPosition, spawnRotation);
+            twinInstance.name = $"DigitalTwin_{machineId}";
+
+            // Set initial visibility
+            SetTwinVisibility(twinInstance, startVisible);
+
+            // Initialize the twin component
+            DigitalTwin twinComponent = twinInstance.GetComponent<DigitalTwin>();
+            if (twinComponent != null)
+            {
+                twinComponent.Initialize(machineId);
+            }
+
+            return twinInstance;
+        }
+
+        /// <summary>
+        /// Makes a previously spawned digital twin visible or invisible
+        /// </summary>
+        /// <param name="twin">The digital twin GameObject</param>
+        /// <param name="visible">Whether to make it visible or invisible</param>
+        public void SetTwinVisibility(GameObject twin, bool visible)
+        {
+            if (twin == null)
+                return;
+
+            // Get all renderers
+            Renderer[] renderers = twin.GetComponentsInChildren<Renderer>();
+
+            // Set visibility for all renderers
+            foreach (var renderer in renderers)
+            {
+                renderer.enabled = visible;
+            }
+
+            // Get all colliders if you want to disable interaction while invisible
+            Collider[] colliders = twin.GetComponentsInChildren<Collider>();
+
+            // Set colliders enabled/disabled based on visibility
+            foreach (var collider in colliders)
+            {
+                collider.enabled = visible;
+            }
+        }
+
+        /// <summary>
+        /// Makes a previously spawned digital twin visible
+        /// </summary>
+        /// <param name="machineId">The ID of the digital twin to make visible</param>
+        public void RevealDigitalTwin(string machineId)
+        {
+            GameObject twin = GameObject.Find($"DigitalTwin_{machineId}");
+            if (twin != null)
+            {
+                SetTwinVisibility(twin, true);
+
+                // Play reveal animation if the twin has the component
+                DigitalTwin twinComponent = twin.GetComponent<DigitalTwin>();
+                if (twinComponent != null)
+                {
+                    twinComponent.PlayRevealAnimation();
+                }
+            }
         }
     }
 }

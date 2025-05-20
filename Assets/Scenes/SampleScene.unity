@@ -977,9 +977,9 @@ MonoBehaviour:
   xrCamera: {fileID: 7990873191194911415}
   mqttImageTopic: machine/scan/image
   mqttResultTopic: machine/scan/result
-  mqttManager: {fileID: 0}
-  digitalTwinManager: {fileID: 0}
-  scanUIController: {fileID: 0}
+  mqttManager: {fileID: 1786639069}
+  digitalTwinManager: {fileID: 1227479955}
+  scanUIController: {fileID: 2397425259672624094}
 --- !u!4 &799254317
 Transform:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff30ab2af4ec2d4e9f0594f87f72ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokerAddress: localhost
+  brokerAddress: test.mosquitto.org
   brokerPort: 1883
   clientId: UnityMRApp
   username: 
@@ -2436,6 +2436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 746093614358700841}
   - component: {fileID: 746093614358700842}
+  - component: {fileID: 746093614358700843}
   m_Layer: 0
   m_Name: moteur_electrique_2pgs560_12b14
   m_TagString: Untagged
@@ -3790,15 +3791,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   machineId: 0
+  revealAnimationDuration: 1
   normalStatusMaterial: {fileID: 0}
   warningStatusMaterial: {fileID: 0}
   errorStatusMaterial: {fileID: 0}
   statusIndicatorRenderers: []
   selectionHighlight: {fileID: 0}
-  spawnAnimationDuration: 1.5
+  spawnAnimationDuration: 1
   infoPanel: {fileID: 0}
   telemetryTopicPrefix: machine/telemetry/
   commandTopicPrefix: machine/command/
+--- !u!114 &746093614358700843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76975284074183059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2299ead0fa3004caad0775e5d1ac7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &748931107658063523
 Transform:
   m_ObjectHideFlags: 0

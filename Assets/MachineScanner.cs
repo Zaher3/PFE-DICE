@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-using Unity.XRTemplate;
+using Unity.XRTemplate; // Make sure to add the namespace
 using UnityEngine;
 
 public class MachineScanner : MonoBehaviour
@@ -21,31 +21,100 @@ public class MachineScanner : MonoBehaviour
     private Unity.XRTemplate.DigitalTwinManager digitalTwinManager;
 
     [SerializeField]
-    private ScanUIController scanUIController;
+    private Unity.XRTemplate.ScanUIController scanUIController;
 
     private bool isScanning = false;
-    private int scanTimeoutSeconds = 10; // Timeout for waiting response from Node-RED
 
-    private void Start()
+private void Start()
+{
+    // If camera is not set, try to find the main camera
+    if (xrCamera == null)
+        xrCamera = Camera.main;
+
+    // If MQTT manager is not set, try to find it
+    if (mqttManager == null)
+        mqttManager = FindObjectOfType<MQTTCommunicationManager>();
+
+    // Subscribe to the MQTT connected event
+    if (mqttManager != null)
     {
-        // If camera is not set, try to find the main camera
-        if (xrCamera == null)
-            xrCamera = Camera.main;
-
-        // If MQTT manager is not set, try to find it
-        if (mqttManager == null)
-            mqttManager = FindObjectOfType<MQTTCommunicationManager>();
-
-        // Subscribe to the result topic to receive machine IDs from Node-RED
-        if (mqttManager != null)
+        // Subscribe to connection events for future connections
+        mqttManager.onConnected += OnMQTTConnected;
+        mqttManager.onConnectionFailed += OnMQTTConnectionFailed;
+        mqttManager.onConnectionLost += OnMQTTConnectionLost;
+        
+        // If already connected, subscribe immediately
+        if (mqttManager.IsConnected)
         {
-            mqttManager.Subscribe(mqttResultTopic, OnMachineIdReceived);
+            SubscribeToTopics();
         }
-
-        Debug.Log("MachineScanner initialized successfully");
+        else if (!mqttManager.IsConnecting)
+        {
+            // Start connection process if not already connecting
+            mqttManager.StartConnectionProcess();
+        }
+    }
+    else
+    {
+        Debug.LogError("MQTTCommunicationManager not found");
     }
 
-    // Method that will be called by the ScanUIController or ScanButtonHandler
+    Debug.Log("MachineScanner initialized successfully");
+}
+
+private void OnDestroy()
+{
+    // Clean up events
+    if (mqttManager != null)
+    {
+        mqttManager.onConnected -= OnMQTTConnected;
+        mqttManager.onConnectionFailed -= OnMQTTConnectionFailed;
+        mqttManager.onConnectionLost -= OnMQTTConnectionLost;
+    }
+}
+
+private void OnMQTTConnected()
+{
+    Debug.Log("MQTT Connected! Subscribing to machine scan topics...");
+    SubscribeToTopics();
+}
+
+private void OnMQTTConnectionFailed(string reason)
+{
+    Debug.LogWarning($"MQTT Connection failed: {reason}");
+    
+    // You could update UI here to show connection status
+    if (scanUIController != null)
+    {
+        scanUIController.ShowConnectionStatus(false, $"Connection failed: {reason}");
+    }
+}
+
+private void OnMQTTConnectionLost()
+{
+    Debug.LogWarning("MQTT Connection lost. Reconnecting...");
+    
+    // You could update UI here to show connection status
+    if (scanUIController != null)
+    {
+        scanUIController.ShowConnectionStatus(false, "Connection lost. Reconnecting...");
+    }
+}
+
+private void SubscribeToTopics()
+{
+    // Subscribe to the result topic to receive machine IDs from Node-RED
+    mqttManager.Subscribe(mqttResultTopic, OnMachineIdReceived);
+    Debug.Log("Subscribed to MQTT topics for machine scanning");
+    
+    // You could update UI here to show connection status
+    if (scanUIController != null)
+    {
+        scanUIController.ShowConnectionStatus(true, "Connected to MQTT broker");
+    }
+}
+
+    // Method called by the ScanButtonHandler
     public void TriggerScan()
     {
         if (isScanning)
@@ -59,7 +128,7 @@ public class MachineScanner : MonoBehaviour
         isScanning = true;
         Debug.Log("Starting scan process...");
 
-        // Show scanning in progress UI
+        // Update UI to show scanning
         if (scanUIController != null)
         {
             scanUIController.ShowScanningIndicator(true);
@@ -81,32 +150,20 @@ public class MachineScanner : MonoBehaviour
         string base64Image = ConvertTextureToBase64(capturedImage);
 
         // Send the image to Node-RED via MQTT
-        if (mqttManager != null)
+        if (mqttManager != null && mqttManager.IsConnected)
         {
             // Create a simple JSON message with the image data
             string jsonMessage =
                 $"{{\"timestamp\":\"{DateTime.Now.ToString("o")}\",\"image\":\"{base64Image}\"}}";
             mqttManager.Publish(mqttImageTopic, jsonMessage);
             Debug.Log("Image sent to Node-RED via MQTT");
-
-            // Wait for response (this will be handled by OnMachineIdReceived callback)
-            float timeElapsed = 0;
-            while (isScanning && timeElapsed < scanTimeoutSeconds)
-            {
-                timeElapsed += Time.deltaTime;
-                yield return null;
-            }
-
-            // If we're still scanning after timeout, it failed
-            if (isScanning)
-            {
-                ScanFailed("Recognition timeout - no response received from server");
-            }
         }
         else
         {
-            ScanFailed("MQTT manager not found");
+            ScanFailed("MQTT manager not connected");
         }
+
+        // Wait for the response in OnMachineIdReceived callback
     }
 
     private void OnMachineIdReceived(string message)
@@ -114,13 +171,44 @@ public class MachineScanner : MonoBehaviour
         // Parse the JSON message from Node-RED
         try
         {
-            // Simplified JSON parsing - in production use a proper JSON library
             string machineId = ExtractMachineIdFromJson(message);
 
             if (!string.IsNullOrEmpty(machineId))
             {
                 Debug.Log($"Received machine ID: {machineId}");
-                SpawnDigitalTwin(machineId);
+
+                // Check if there's already a model with this ID in the scene
+                GameObject existingModel = GameObject.Find($"moteur_electrique_{machineId}");
+                if (existingModel != null)
+                {
+                    // Show the pre-placed model
+                    HideUntilRecognized hideScript =
+                        existingModel.GetComponent<HideUntilRecognized>();
+                    if (hideScript != null)
+                    {
+                        hideScript.ShowModel();
+
+                        // Show success UI
+                        if (scanUIController != null)
+                        {
+                            scanUIController.ShowScanningIndicator(false);
+                            scanUIController.ShowResult(
+                                true,
+                                $"Machine {machineId} identified successfully!"
+                            );
+                        }
+                    }
+                    else
+                    {
+                        // If the script isn't attached, spawn a new digital twin
+                        SpawnDigitalTwin(machineId);
+                    }
+                }
+                else
+                {
+                    // No pre-placed model found, spawn a new one
+                    SpawnDigitalTwin(machineId);
+                }
             }
             else
             {
@@ -138,19 +226,30 @@ public class MachineScanner : MonoBehaviour
     {
         if (digitalTwinManager != null)
         {
-            GameObject spawnedTwin = digitalTwinManager.SpawnDigitalTwin(machineId);
+            // Spawn the digital twin invisible initially
+            GameObject spawnedTwin = digitalTwinManager.SpawnDigitalTwin(
+                machineId,
+                null,
+                null,
+                false
+            );
 
             if (spawnedTwin != null)
             {
                 // Show success in UI
                 if (scanUIController != null)
                 {
+                    scanUIController.ShowScanningIndicator(false);
                     scanUIController.ShowResult(
                         true,
                         $"Machine {machineId} identified successfully!"
                     );
                 }
+
                 Debug.Log($"Digital twin spawned for machine ID: {machineId}");
+
+                // Wait a brief moment, then reveal the digital twin
+                StartCoroutine(RevealTwinAfterDelay(machineId, 0.5f));
             }
             else
             {
@@ -163,6 +262,16 @@ public class MachineScanner : MonoBehaviour
         }
 
         isScanning = false;
+    }
+
+    private IEnumerator RevealTwinAfterDelay(string machineId, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (digitalTwinManager != null)
+        {
+            digitalTwinManager.RevealDigitalTwin(machineId);
+        }
     }
 
     private void ScanFailed(string errorMessage)
@@ -207,17 +316,22 @@ public class MachineScanner : MonoBehaviour
     private string ConvertTextureToBase64(Texture2D texture)
     {
         // Convert to JPG to reduce size
-        byte[] jpgBytes = texture.EncodeToJPG(75); // 75% quality
+        byte[] jpgBytes = texture.EncodeToJPG(75); // 75% quality, reduce if needed
         return Convert.ToBase64String(jpgBytes);
     }
 
     private string ExtractMachineIdFromJson(string json)
     {
-        // Simple JSON parsing - in production, use JsonUtility or Newtonsoft.Json
-        // Expected format: {"machineId": "motor_001", "confidence": 0.95}
-
+        // Simple JSON parsing - in production use JsonUtility
         if (string.IsNullOrEmpty(json))
             return null;
+
+        // Check for error messages
+        if (json.Contains("\"error\":"))
+        {
+            Debug.LogWarning($"Received error response: {json}");
+            return null;
+        }
 
         // Look for "machineId":" pattern and extract the value
         const string pattern = "\"machineId\":\"";
