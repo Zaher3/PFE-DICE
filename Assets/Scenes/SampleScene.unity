@@ -5580,7 +5580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.333, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 33, y: 21}
   m_SizeDelta: {x: 0, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1249125080880083684
@@ -14873,6 +14873,7 @@ GameObject:
   - component: {fileID: 3151005012270968200}
   - component: {fileID: 1066318846200105676}
   - component: {fileID: 8892243884725468161}
+  - component: {fileID: 8892243884725468163}
   - component: {fileID: 8892243884725468160}
   - component: {fileID: 8892243884725468162}
   m_Layer: 0
@@ -24577,6 +24578,7 @@ GameObject:
   - component: {fileID: 1941997710702857078}
   - component: {fileID: 2135315741470832589}
   - component: {fileID: 684498188216164748}
+  - component: {fileID: 5911303795927584578}
   - component: {fileID: 5911303795927584576}
   - component: {fileID: 5911303795927584575}
   - component: {fileID: 5911303795927584577}
@@ -24599,8 +24601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_InteractionManager: {fileID: 4763085286656033646}
+  m_Colliders:
+  - {fileID: 5911303795927584578}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -24747,7 +24750,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5911303795927584574}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -24760,7 +24763,7 @@ Rigidbody:
     serializedVersion: 2
     m_Bits: 0
   m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -24788,6 +24791,27 @@ MonoBehaviour:
   soundVolume: 0.5
   hapticIntensity: 0.5
   hapticDuration: 0.1
+--- !u!65 &5911303795927584578
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911303795927584574}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.146442, y: 80.85263, z: 79.99999}
+  m_Center: {x: -2.9267774, y: 0.4263252, z: 0}
 --- !u!4 &5913595892887792407
 Transform:
   m_ObjectHideFlags: 0
@@ -28513,6 +28537,7 @@ GameObject:
   - component: {fileID: 6762472856485712564}
   - component: {fileID: 7818346222451915434}
   - component: {fileID: 4915261708293113354}
+  - component: {fileID: 7818346222451915438}
   - component: {fileID: 7818346222451915436}
   - component: {fileID: 7818346222451915435}
   - component: {fileID: 7818346222451915437}
@@ -34324,8 +34349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_InteractionManager: {fileID: 4763085286656033646}
+  m_Colliders:
+  - {fileID: 7818346222451915438}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -34472,7 +34498,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6650147442352803608}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -34485,7 +34511,7 @@ Rigidbody:
     serializedVersion: 2
     m_Bits: 0
   m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -34513,6 +34539,27 @@ MonoBehaviour:
   soundVolume: 0.5
   hapticIntensity: 0.5
   hapticDuration: 0.1
+--- !u!65 &7818346222451915438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650147442352803608}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 100, y: 90, z: 90}
+  m_Center: {x: -71.5, y: 0, z: 0}
 --- !u!224 &7821075290672194935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42486,7 +42533,7 @@ Transform:
   m_GameObject: {fileID: 8733093507503307757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.738}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44450,8 +44497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_InteractionManager: {fileID: 4763085286656033646}
+  m_Colliders:
+  - {fileID: 8892243884725468163}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -44613,7 +44661,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -44639,6 +44687,27 @@ MonoBehaviour:
   soundVolume: 0.5
   hapticIntensity: 0.5
   hapticDuration: 0.1
+--- !u!65 &8892243884725468163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663987442436243606}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 55, y: 90, z: 90}
+  m_Center: {x: -144.49806, y: 0, z: 0}
 --- !u!1 &8893227837875529605
 GameObject:
   m_ObjectHideFlags: 0
