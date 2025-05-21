@@ -1712,13 +1712,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff30ab2af4ec2d4e9f0594f87f72ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokerAddress: test.mosquitto.org
+  brokerAddress: localhost
   brokerPort: 1883
   clientId: UnityMRApp
   username: 
   password: 
   connectOnStart: 1
   debugMode: 1
+  initialReconnectInterval: 1
+  maxReconnectInterval: 60
+  connectionTimeout: 10
+  maxReconnectAttempts: 0
 --- !u!4 &1786639070
 Transform:
   m_ObjectHideFlags: 0

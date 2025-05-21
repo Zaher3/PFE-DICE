@@ -254,7 +254,7 @@ namespace uPLibrary.Networking.M2Mqtt.Messages
                 buffer[index++] = this.qosLevels[topicIdx];
             }
             
-              return buffer;
+            return buffer;
         }
 
         public override string ToString()

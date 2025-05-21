@@ -27,9 +27,9 @@ namespace uPLibrary.Networking.M2Mqtt
         // default timeout on receiving from client
         public const int MQTT_DEFAULT_TIMEOUT = 30000;
         // max publish, subscribe and unsubscribe retry for QoS Level 1 or 2
-        public const int MQTT_ATTEMPTS_RETRY = 1;
+        public const int MQTT_ATTEMPTS_RETRY = 3;
         // delay for retry publish, subscribe and unsubscribe for QoS Level 1 or 2
-        public const int MQTT_DELAY_RETRY = 1;
+        public const int MQTT_DELAY_RETRY = 10000;
         // broker need to receive the first message (CONNECT)
         // within a reasonable amount of time after TCP/IP connection 
         public const int MQTT_CONNECT_TIMEOUT = 30000;
