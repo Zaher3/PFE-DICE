@@ -1131,7 +1131,7 @@ MonoBehaviour:
   - machineId: 0
     digitalTwinPrefab: {fileID: 76975284074183059}
     description: Prototype
-  defaultDigitalTwin: {fileID: 0}
+  defaultDigitalTwin: {fileID: 76975284074183059}
   spawnDistance: 1
   spawnOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &1227479956
@@ -1718,11 +1718,12 @@ MonoBehaviour:
   username: 
   password: 
   connectOnStart: 1
-  debugMode: 1
   initialReconnectInterval: 1
   maxReconnectInterval: 60
-  connectionTimeout: 10
   maxReconnectAttempts: 0
+  debugMode: 1
+  verboseLogging: 1
+  logMessageContent: 1
 --- !u!4 &1786639070
 Transform:
   m_ObjectHideFlags: 0
@@ -3722,8 +3723,8 @@ Transform:
   m_GameObject: {fileID: 76975284074183059}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.94, y: 2.1429076, z: -3.24}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: -0.01, y: 2.1429076, z: -4.24}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5207158044498736278}
@@ -42485,7 +42486,7 @@ Transform:
   m_GameObject: {fileID: 8733093507503307757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

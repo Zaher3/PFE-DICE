@@ -61,6 +61,7 @@ namespace Unity.XRTemplate
         private string commandTopic;
         private bool isInitialized = false;
         private GameObject spawnedInfoPanel;
+        private Vector3 originalScale; // Added this line to declare the variable
 
         // Machine state
         private enum MachineStatus
@@ -72,6 +73,16 @@ namespace Unity.XRTemplate
 
         private MachineStatus currentStatus = MachineStatus.Normal;
         private Dictionary<string, object> telemetryData = new Dictionary<string, object>();
+
+        private void Start()
+        {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.useGravity = false;
+                rb.isKinematic = true; // This will prevent physics forces completely
+            }
+        }
 
         private void Awake()
         {
@@ -124,6 +135,8 @@ namespace Unity.XRTemplate
             if (isInitialized)
                 return;
 
+            // Store original scale
+            originalScale = transform.localScale;
             machineId = id;
             telemetryTopic = telemetryTopicPrefix + machineId;
             commandTopic = commandTopicPrefix + machineId;
@@ -147,7 +160,7 @@ namespace Unity.XRTemplate
 
         private IEnumerator RevealAnimationCoroutine()
         {
-            // Start with a small scale
+            // Start with a zero scale
             transform.localScale = Vector3.zero;
 
             // Scale up with bounce effect
@@ -169,14 +182,15 @@ namespace Unity.XRTemplate
                             * Mathf.Sin((normalizedTime * 10 - 0.75f) * (2 * Mathf.PI) / 3);
                 }
 
-                transform.localScale = Vector3.one * progress;
+                // Use original scale instead of Vector3.one
+                transform.localScale = originalScale * progress;
 
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
 
-            // Ensure we end at exactly the target scale
-            transform.localScale = Vector3.one;
+            // Ensure we end at exactly the original scale
+            transform.localScale = originalScale;
         }
 
         private IEnumerator PlaySpawnAnimation()
@@ -203,15 +217,15 @@ namespace Unity.XRTemplate
                             * Mathf.Sin((normalizedTime * 10 - 0.75f) * (2 * Mathf.PI) / 3);
                 }
 
-                transform.localScale = Vector3.one * progress;
+                transform.localScale = originalScale * progress;
 
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
 
             // Ensure we end at exactly the target scale
-            transform.localScale = Vector3.one;
-        }
+            transform.localScale = originalScale;
+        } // Added closing brace here
 
         private void OnSelectEntered(SelectEnterEventArgs args)
         {
